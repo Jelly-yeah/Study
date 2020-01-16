@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎</title>
+</head>
+<body>
+    欢迎{{data["name"]}}
+    <img src="/static/images/photo/{{data['head_photo']}}" style="width: 100px">
+
+    <form action="upload" method="POST" enctype="multipart/form-data">
+        上传头像: <input type="file" name="file" />
+        <button type="submit">上传</button>
+    </form>
+</body>
+</html>

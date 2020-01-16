@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页</title>
+    <script type="text/javascript">
+        function f()
+            {
+            let a = document.getElementById("usn").value;
+            let b = document.getElementById("pwd").value;
+            alert(a+b)
+            }
+    </script>
+</head>
+<body>
+    <form action="login1" method="POST">
+        <input name="usn", value="" , placeholder="请输入 用户名/手机号码:"/><br>
+        <input type="password" name="pwd", value="" , placeholder="请输入 密码:"/><br>
+        <button type="submit">登录</button>
+    </form>
+</body>
+</html>
