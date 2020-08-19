@@ -1,3 +1,2 @@
 import random 
-for _ in range(999999999999):
-    print('-'.join(["".join([chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))) , chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))), chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))), chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9)))]) for i in range(4)]))
+print('-'.join(["".join([chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))) , chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))), chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9))), chr(random.randint(65, 90)) if random.randint(0, 1) else str((random.randint(0, 9)))]) for i in range(4)]))

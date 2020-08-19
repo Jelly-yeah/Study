@@ -1,19 +1,19 @@
-def isPalindrome(x):
+def is_palindrome(x):
         
-    if len(x)%2==0:
+    if len(x) % 2 == 0:
         
-        listx = []
+        _list = []
         for i in range(len(x)//2):
             x = list(x)
-            listx.append(x[i])
+            _list.append(x[i])
 
-        listy = []
+        lst = []
         x = "".join(x)
         for i in range(len(x)-1, len(x)//2-1, -1):
             x = list(x)
             listy.append(x[i])
 
-        if listx == listy:
+        if _list == lst:
             return True
         else:
             return False
@@ -25,21 +25,22 @@ def isPalindrome(x):
         x.pop(middle)
         x = "".join(x)
 
-        listx = []
+        _list = []
         for i in range(len(x)//2):
             x = list(x)
-            listx.append(x[i])
+            _list.append(x[i])
 
-        listy = []
+        lst = []
         x = "".join(x)
         for i in range(len(x)-1, len(x)//2-1, -1):
             x = list(x)
-            listy.append(x[i])
+            lst.append(x[i])
 
-        if listx == listy:
+        if _list == lst:
             return True
         else:
             return False
 
+
 a = input()
-print(isPalindrome(a))
+print(is_palindrome(a))

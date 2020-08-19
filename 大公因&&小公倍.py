@@ -45,11 +45,14 @@ def xiaogongbei(x, y):
 print(xiaogongbei(12,8))
 
 """
+
+
 def dagongyin(x, y):
     z = x % y
-    while z!=0:
+    while z != 0:
         z = x % y
         x, y = y, z
     return x
 
-print(dagongyin(24,16))
+
+print(dagongyin(24, 16))

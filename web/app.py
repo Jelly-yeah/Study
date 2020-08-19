@@ -26,7 +26,8 @@ def hello_world():
 def success():
     user = session.get("user")
     return render_template("success.html", data=user)
-    
+
+
 @app.route("/login1", methods=["POST"])
 def _login():
     usn = request.form["usn"]
